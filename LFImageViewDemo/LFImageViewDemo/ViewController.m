@@ -98,7 +98,7 @@
     LFImageViewExampleCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if(!cell) cell = [[LFImageViewExampleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     cell.webImageView.image = nil;
-    [cell.webImageView setImageWithURL:[NSURL URLWithString:self.imageLinks[indexPath.row]]placeholderImage:[UIImage imageNamed:@"pia.png"] errorholderImage:[UIImage imageNamed:@"cube.png"] ];
+    [cell.webImageView lf_setImageWithURL:[NSURL URLWithString:self.imageLinks[indexPath.row]]placeholderImage:[UIImage imageNamed:@"pia.png"] errorholderImage:[UIImage imageNamed:@"cube.png"] ];
     cell.webImageView.compledBlock = ^(UIImage *image, NSError *error,BOOL finished)
     {
         NSLog(@"%@",error.domain);

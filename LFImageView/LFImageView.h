@@ -49,7 +49,7 @@ typedef void (^LFImageDownloaderCompledBlock)(UIImage *image, NSError *error,BOO
  @param 	url 	图片资源url
  @result
  */
-- (void)setImageWithURL:(NSURL *)url;
+- (void)lf_setImageWithURL:(NSURL *)url;
 
 
 /*!
@@ -60,7 +60,7 @@ typedef void (^LFImageDownloaderCompledBlock)(UIImage *image, NSError *error,BOO
  @param 	placeholder 	占位符图片
  @result
  */
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
+- (void)lf_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
 
 
 /*!
@@ -72,7 +72,7 @@ typedef void (^LFImageDownloaderCompledBlock)(UIImage *image, NSError *error,BOO
  @param 	errorholder 	默认异常图片
  @result
  */
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder errorholderImage:(UIImage *)errorholder;
+- (void)lf_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder errorholderImage:(UIImage *)errorholder;
 
 
 @end

@@ -31,9 +31,9 @@ typedef NS_ENUM(NSInteger, LFImageViewErro)
  @param 	url 	图片资源url
  @result
  */
-- (void)setImageWithURL:(NSURL *)url
+- (void)lf_setImageWithURL:(NSURL *)url
 {
-    [self setImageWithURL:url placeholderImage:nil errorholderImage:nil];
+    [self lf_setImageWithURL:url placeholderImage:nil errorholderImage:nil];
 }
 
 
@@ -45,9 +45,9 @@ typedef NS_ENUM(NSInteger, LFImageViewErro)
  @param 	placeholder 	占位符图片
  @result
  */
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder
+- (void)lf_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder
 {
-    [self setImageWithURL:url placeholderImage:placeholder errorholderImage:nil];
+    [self lf_setImageWithURL:url placeholderImage:placeholder errorholderImage:nil];
 }
 
 
@@ -62,7 +62,7 @@ typedef NS_ENUM(NSInteger, LFImageViewErro)
  	@param 	completedBlock 	下载完成回调
  	@result
  */
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder errorholderImage:(UIImage *)errorholder
+- (void)lf_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder errorholderImage:(UIImage *)errorholder
 {
     [self sd_cancelCurrentImageLoad];
     
